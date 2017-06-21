@@ -10,7 +10,9 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.PopupMenu;
 
 import java.util.regex.Pattern;
 
@@ -25,7 +27,8 @@ public class video1 extends Fragment {
     GridView grid;
     String[] names;
     Bitmap[]  bitmaps;
-
+    PopupMenu menu;
+    menuaction action;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -41,7 +44,15 @@ public class video1 extends Fragment {
         try {
             grid = (GridView) v.findViewById(R.id.videogrid);
             photoloader task = new photoloader();
+            action=new menuaction();
             task.execute(grid);
+            grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    menu=new PopupMenu(getContext(),view);
+                    action.menu(menu,getContext());
+                }
+            });
         }catch (Exception e)
         {
             e.printStackTrace();

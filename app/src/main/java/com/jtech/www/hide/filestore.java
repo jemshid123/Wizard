@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.util.Log;
+import android.widget.PopupMenu;
 
 import com.face.www.medialib.mediatype;
 
@@ -84,5 +85,6 @@ public  static Bitmap[] storedthumb(String[] file)
     return bit.toArray(new Bitmap[bit.size()
             ]);
 }
+
 
 }
