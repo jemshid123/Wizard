@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Hide</string>
+    <string name="title_activity_main">main</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="video">Video</string>
+    <string name="photo">Photo</string>
+    <string name="document">Document</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

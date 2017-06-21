@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <group android:checkableBehavior="single" >
+<item
+    android:id="@+id/video"
+
+    android:icon="@drawable/ic_menu_gallery"
+    android:title="Video"/>
+        <item
+            android:id="@+id/photo"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Photo"/>
+        <item
+            android:id="@+id/document"
+            android:icon="@android:drawable/star_off"
+            android:title="Document" />
+
+        <item
+            android:id="@+id/file"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="File" />
+
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+    </group>
+
+
+
+
+</menu>
