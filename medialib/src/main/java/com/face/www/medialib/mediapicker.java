@@ -168,7 +168,7 @@ public class mediapicker  {
         }
         catch(Exception fnf)
         {
-            Log.d("file coppy *********","file not coppied "+strSourceFile+" "+strDestinationFile);
+            Log.d("file coppy *********--","file not coppied "+strSourceFile+" "+strDestinationFile);
 
 
             fnf.printStackTrace();
