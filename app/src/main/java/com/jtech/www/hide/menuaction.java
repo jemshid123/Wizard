@@ -76,11 +76,12 @@ File file;
                     else if(item.getTitle().toString().equals("Details"))
                     {
                         Date date=new Date(file.lastModified());
-                        int size=(int)file.length()/(8*1024*1024);
+                        int size=(int)file.length()/(1024*1024);
+                        
                         AlertDialog.Builder dialog=new AlertDialog.Builder(context);
                         dialog.setCancelable(true);
                         dialog.setTitle("name");
-                        dialog.setMessage("name:"+name+"\n size:"+size+"\nLast modified:"+date);
+                        dialog.setMessage("name:"+name+"\n size:"+size+"MB\nLast modified:"+date);
                         dialog.setIcon(R.mipmap.lock);
                         AlertDialog alert=dialog.create();
                         alert.show();
