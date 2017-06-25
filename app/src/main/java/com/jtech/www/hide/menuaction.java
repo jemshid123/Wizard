@@ -3,13 +3,17 @@ package com.jtech.www.hide;
 import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.support.v7.app.AlertDialog;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.PopupMenu;
 import android.widget.Toast;
 
 import java.io.File;
+import java.util.Date;
 import java.util.regex.Pattern;
 
 /**
@@ -68,6 +72,19 @@ File file;
                            context.getContentResolver().delete(cryptodb.CONTENT_URI,cryptodb._ID+"="+id,null);
                            Toast.makeText(context, name + " not deleted", Toast.LENGTH_SHORT).show();
                        }
+                    }
+                    else if(item.getTitle().toString().equals("Details"))
+                    {
+                        Date date=new Date(file.lastModified());
+                        int size=(int)file.length()/(8*1024*1024);
+                        AlertDialog.Builder dialog=new AlertDialog.Builder(context);
+                        dialog.setCancelable(true);
+                        dialog.setTitle("name");
+                        dialog.setMessage("name:"+name+"\n size:"+size+"\nLast modified:"+date);
+                        dialog.setIcon(R.mipmap.lock);
+                        AlertDialog alert=dialog.create();
+                        alert.show();
+
                     }
                 }catch (Exception e){}
                 return true;

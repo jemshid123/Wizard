@@ -4,8 +4,7 @@
     >
     <item
         android:title="Decrypt"/>
-    <item
-        android:title="Rename"/>
+
     <item
         android:title="Delete"/>
     <item android:title="Details"/>
