@@ -59,7 +59,7 @@ menuaction action;
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     menu=new PopupMenu(getContext(),view);
-                    action.menu(menu,getContext());
+                    action.menu(menu,getContext(),names[position]);
                 }
             });
         }catch (Exception e)
