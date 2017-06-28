@@ -77,7 +77,7 @@ File file;
                     {
                         Date date=new Date(file.lastModified());
                         int size=(int)file.length()/(1024*1024);
-                        
+
                         AlertDialog.Builder dialog=new AlertDialog.Builder(context);
                         dialog.setCancelable(true);
                         dialog.setTitle("name");

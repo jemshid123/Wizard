@@ -258,21 +258,7 @@ AlertDialog alert;
         else
         if(R.id.nav_manage==id)
         {
-           String file;
-            cryptodb sql=new cryptodb();
-            String URL = "content://com.cryptodb.www/students";
-            Uri students = Uri.parse(URL);
-            Cursor c = managedQuery(students, null, null, null, "name");
-            if (c.moveToFirst()) {
-                do {
-                    file=c.getString(c.getColumnIndex(sql.NAME));
-                    Toast.makeText(getBaseContext(), c.getString(c.getColumnIndex(sql._ID)) + ", " + c.getString(c.getColumnIndex(sql.NAME)) +
-                            ", " + c.getString(c.getColumnIndex(sql.PASSWORD)) +
-                            ", " + c.getString(c.getColumnIndex(sql.Status)), Toast.LENGTH_SHORT).show();
-                    Toast.makeText(getBaseContext(),filestore.getThumbPath(file),Toast.LENGTH_LONG).show();
-                }
-                while (c.moveToNext());
-            }
+startActivity(new Intent(main.this,settings.class));
         }
 
 

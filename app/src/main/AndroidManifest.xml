@@ -47,7 +47,10 @@
             android:name=".cryptodb"
             android:authorities="com.cryptodb.www"
             android:enabled="true"
-            android:exported="true"></provider>
+            android:exported="true" />
+
+        <activity android:name=".settings" />
+        <activity android:name=".changepassword"></activity>
     </application>
 
 </manifest>

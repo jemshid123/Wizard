@@ -58,5 +58,7 @@ dependencies {
 dependencies {
     compile 'it.neokree:MaterialTabs:0.11'
 }
-
+dependencies {
+    compile 'com.kyleduo.switchbutton:library:1.4.6'
+}
 
