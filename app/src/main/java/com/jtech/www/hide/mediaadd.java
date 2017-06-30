@@ -55,6 +55,7 @@ int pre=-1;
             }
         });
 
+
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
 
@@ -63,7 +64,7 @@ int pre=-1;
                 parent.getChildAt(position).setBackgroundColor(Color.parseColor("#091b4c"));
 
                    if((pre != -1)&&(pre != position)) {
-                       parent.getChildAt(pre).setBackgroundColor(Color.parseColor("#000000"));
+                       parent.getChildAt(pre).setBackgroundColor(Color.parseColor("#ffffff"));
                    }
                     pre=position;
                 }catch (Exception e){  parent.getChildAt(position).setBackgroundColor(Color.parseColor("#000"));}
@@ -113,7 +114,8 @@ int pre=-1;
 encrypt.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-
+encrypttask task=new encrypttask();
+        task.execute(names);
 
     }
 });
@@ -251,6 +253,8 @@ encrypt.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             startActivity(new Intent(mediaadd.this,MainActivity.class));
+                            finish();
+
                         }
                     });
                     dialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {

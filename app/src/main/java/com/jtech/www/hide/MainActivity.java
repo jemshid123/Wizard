@@ -1,8 +1,10 @@
 package com.jtech.www.hide;
 
+import android.Manifest;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -20,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
          final EditText password=(EditText)findViewById(R.id.PASSWORD);
         File file=new File(getFilesDir()+"/new1.txt");
+        ActivityCompat.requestPermissions(this,new String []{
+            Manifest.permission.PROCESS_OUTGOING_CALLS},1);
         if(!file.exists())
         {
             startActivity(new Intent(this,signup.class));
