@@ -17,21 +17,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="88dp"
-        android:layout_height="123dp"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@mipmap/lock"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/wiz"
 
         />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="119dp"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="HIDE"
-        android:gravity="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        tools:textSize="45sp"
-        android:textStyle="bold" />
 
 </LinearLayout>
