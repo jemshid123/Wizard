@@ -9,14 +9,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-
+android:background="@color/colorAccent"
     tools:context="com.jtech.www.hide.MainActivity">
 
 
     <TextClock
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/white"
         android:id="@+id/textClock"
         android:layout_marginBottom="31dp"
         android:layout_alignParentBottom="true"
@@ -24,37 +24,31 @@
 
     <ImageView
 
-        android:layout_width="70dp"
+        android:layout_width="150dp"
         android:layout_height="70dp"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/newwiz"
         android:id="@+id/imageView4"
-        android:layout_above="@+id/textClock"
-        android:layout_toStartOf="@+id/textView"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="372dp" />
+        android:scaleType="centerCrop"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/PASSWORD"
+        android:layout_marginStart="24dp"
+        android:layout_alignEnd="@+id/PASSWORD" />
 
     <EditText
-        android:hint="Enter Password"
+        android:hint="   Enter password"
         android:textColorHint="@color/colorAccent"
         android:textColor="@color/colorAccent"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:inputType="numberPassword"
         android:ems="10"
+        android:background="@color/white"
         android:id="@+id/PASSWORD"
         tools:focusable="true"
         tools:focusableInTouchMode="true"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:text="HIDE"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:textSize="36sp"
-        android:textColor="@color/colorAccent"
-        android:layout_alignBottom="@+id/imageView4"
-        android:layout_alignStart="@+id/textClock" />
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp" />
 
 </RelativeLayout>

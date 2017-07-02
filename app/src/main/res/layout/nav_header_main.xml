@@ -18,10 +18,10 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:scaleType="centerCrop"
-        android:src="@drawable/wizz"
+        android:src="@drawable/newwiz"
 
-        android:layout_weight="0.90" />
+        android:layout_weight="0.72" />
 
 </LinearLayout>

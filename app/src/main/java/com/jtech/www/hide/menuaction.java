@@ -16,6 +16,8 @@ import java.io.File;
 import java.util.Date;
 import java.util.regex.Pattern;
 
+import static com.jtech.www.hide.R.style.BottomSheet;
+
 /**
  * Created by others on 22-06-2017.
  */
@@ -27,6 +29,7 @@ File file;
             ;
     public void menu(PopupMenu menu, final Context context, final String path)
     {
+
        menu.getMenuInflater().inflate(R.menu.options,menu.getMenu());
         menu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override

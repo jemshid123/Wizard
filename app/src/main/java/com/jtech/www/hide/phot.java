@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.net.sip.SipAudioCall;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -17,6 +18,8 @@ import android.widget.PopupMenu;
 import android.widget.Toast;
 
 import java.util.regex.Pattern;
+
+import static com.jtech.www.hide.R.style.BottomSheet;
 
 
 public class phot extends Fragment {
@@ -55,9 +58,10 @@ menuaction action;
             photoloader task = new photoloader();
             action=new menuaction();
             task.execute(grid);
-            grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+           grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
                     menu=new PopupMenu(getContext(),view);
                     action.menu(menu,getContext(),names[position]);
                 }

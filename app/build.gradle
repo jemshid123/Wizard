@@ -22,7 +22,12 @@ android {
     productFlavors {
     }
 }
+allprojects {
+    repositories {
 
+        maven { url "https://jitpack.io" }
+    }
+}
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
@@ -62,3 +67,6 @@ dependencies {
     compile 'com.kyleduo.switchbutton:library:1.4.6'
 }
 
+dependencies {
+    compile 'com.github.Kennyc1012:BottomSheet:2.3.4'
+}
