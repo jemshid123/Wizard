@@ -85,6 +85,7 @@ AlertDialog alert;
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
 
 
 //Tab setup

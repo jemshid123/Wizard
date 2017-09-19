@@ -36,7 +36,7 @@ android:background="@color/colorAccent"
         android:layout_alignEnd="@+id/PASSWORD" />
 
     <EditText
-        android:hint="   Enter password"
+        android:hint=" Enter password"
         android:textColorHint="@color/colorAccent"
         android:textColor="@color/colorAccent"
         android:layout_width="wrap_content"

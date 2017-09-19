@@ -24,6 +24,9 @@ Button set;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_changepassword);
+        setTitle("Settings");
+        overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
+
         set=(Button)findViewById(R.id.set);
         currpassword=(EditText)findViewById(R.id.currpassword);
         pass1=(EditText)findViewById(R.id.pass1);

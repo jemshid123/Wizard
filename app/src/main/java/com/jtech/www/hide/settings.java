@@ -29,6 +29,8 @@ TextView change;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         setTitle("Settings");
+        overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+
         change=(TextView)findViewById(R.id.change);
         tb=(SwitchButton) findViewById(R.id.toggleButton);
         final File file=new File(getFilesDir()+"/check.txt");

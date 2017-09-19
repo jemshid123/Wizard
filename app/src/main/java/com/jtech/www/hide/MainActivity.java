@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("WIZARD");
+       overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
+
          final EditText password=(EditText)findViewById(R.id.PASSWORD);
         File file=new File(getFilesDir()+"/new1.txt");
         ActivityCompat.requestPermissions(this,new String []{
